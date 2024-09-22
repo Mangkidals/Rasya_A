@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tester/container_page.dart';
+import 'package:flutter_tester/radiobutton.dart';
 import 'package:flutter_tester/row.dart';
 import 'package:flutter_tester/listview_builder.dart';
 import 'package:flutter_tester/stack.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: DropdownMyWidget(),
+      home: RadiobuttonMyWidget(),
     );
   }
 }
