@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart'; // Import SVG support
+import 'package:flutter_svg/flutter_svg.dart';
 
 class BottomnavigationBarMyWidget extends StatefulWidget {
   const BottomnavigationBarMyWidget({super.key});
@@ -19,7 +19,6 @@ class _BottomnavigationBarMyWidgetState
     {'icon': 'assets/search.svg', 'label': 'Search'},
     {'icon': 'assets/settings.svg', 'label': 'Settings'},
   ];
-  
 
   void _onItemTapped(int index) {
     setState(() {
@@ -54,12 +53,14 @@ class _BottomnavigationBarMyWidgetState
                 borderRadius: BorderRadius.all(Radius.circular(14)),
               ),
               child: SvgPicture.asset(
-                i['icon'] ?? 'assets/home.svg',  // Provide a fallback value if icon is null
+                i['icon'] ??
+                    'assets/home.svg', // Provide a fallback value if icon is null
                 color: Colors.white,
               ),
             ),
             icon: SvgPicture.asset(
-              i['icon'] ?? 'assets/home.svg',  // Provide a fallback value here too
+              i['icon'] ??
+                  'assets/home.svg', // Provide a fallback value here too
               color: Colors.grey,
             ),
             label: i['label'],
